@@ -9,9 +9,9 @@ This will allow you to add an invisible button to your webpage that you can clic
 - Bootstrap
 
 # How to Install
-1.Add the PongAddon folder to your root folder for any website.
-2.Edit SetupPong.js to reference your AngularJS App
-3.Paste the following code into the end of your header
+1. Add the PongAddon folder to your root folder for any website.
+2. Edit SetupPong.js to reference your AngularJS App
+3. Paste the following code into the end of your header
 ```html
   <link rel="stylesheet" type="text/css" href="PongAddon/pong.css" />
   <script type="text/javascript" src="PongAddon/SetupPong.js"></script>
