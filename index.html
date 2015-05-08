@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="DP" class="ng-scope">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Ean Milligan's Digital Portfolio">
+		
+		<link rel="stylesheet" type="text/css" href="css/resources/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/resources/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+		<script type="text/javascript" src="js/resources/jquery.min.js"></script>
+		<script type="text/javascript" src="js/resources/bootstrap.min.js"></script>
+		
+		<title ng-controller="MainController">{{pageTitle}} - Ean Milligan's Digital Portfolio</title>
+		<link rel="icon" type="image/png" href="dl/favicon.ico">
+		
+		<script type="text/javascript" src="js/resources/angular.min.js"></script>
+		<script type="text/javascript" src="js/resources/angular-resource.min.js"></script>
+		<script type="text/javascript" src="js/resources/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="js/resources/ui-bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/resources/ngStorage.min.js"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+		
+		<!-- BEGIN PONG SPECIFIC CODE -->
+		
+		<link rel="stylesheet" type="text/css" href="PongAddon/pong.css" />
+		<script type="text/javascript" src="PongAddon/SetupPong.js"></script>
+		<script type="text/javascript" src="PongAddon/pong.js"></script>
+		
+		<!-- END PONG SPECIFIC CODE -->
+		
+	</head>
+	<body class="ng-scope" ng-controller="MainController">
+		
+		<!-- BEGIN PONG SPECIFIC CODE -->
+		
+		<div ng-include="'PongAddon/PongBody.html'"></div>
+		
+		<!-- END PONG SPECIFIC CODE -->
+		
+		<div style="min-height:100%;">
+			<header>
+				<nav class="navbar navbar-default">
+					<div class="container">
+						<div class="navbar-header">
+							<a href="#/"><h1 class="navbar-brand" style="font-size:32px;">Ean Milligan's Digital Portfolio</h1></a>
+						</div>
+						<div style="margin:11px 0px;"></div>
+						<ul class="nav navbar-nav navbar-right">
+							<li ng-class="{'active': pageTitle === 'Home'}"><a href="#/"><h4><i class="fa fa-home"></i> Home</h4></a></li>
+							<li class="dropdown" ng-class="{'active': pageTitle !== 'Home' && pageTitle !== 'Experiences' && pageTitle !== 'Contact'}">
+								<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><h4>Projects <span class="caret"></span></h4></a>
+								<ul class="dropdown-menu" role="menu">
+									<li ng-class="{'active': pageTitle === 'Qualities' || subPage === 'qual'}"><a href="#/qual">Qualities</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">Years</li>
+									<li ng-class="{'active': pageTitle === 'Ninth Grade' || subPage === 'ni'}"><a href="#/ni">9th Grade</a></li>
+									<li ng-class="{'active': pageTitle === 'Tenth Grade' || subPage === 'te'}"><a href="#/te">10th Grade</a></li>
+									<li ng-class="{'active': pageTitle === 'Eleventh Grade' || subPage === 'el'}"><a href="#/el">11th Grade</a></li>
+									<li ng-class="{'active': pageTitle === 'Twelfth Grade' || subPage === 'tw'}"><a href="#/tw">12th Grade</a></li>
+								</ul>
+							</li>
+							<li ng-class="{'active': pageTitle === 'Experiences'}"><a href="#/exp"><h4><i class="fa fa-graduation-cap"></i> Experiences</h4></a></li>
+							<li ng-class="{'active': pageTitle === 'Contact'}"><a href="#/contact"><h4><i class="fa fa-user"></i> Contact</h4></a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<div ui-view></div>
+			
+		</div>
+		<footer class="footer text-center">
+			<div class="container">
+				<div class="col-md-3">
+					<p class="text-muted">Last Updated: {{lastUpdated}}</p>
+				</div>
+				<div class="col-md-6">
+					<p class="text-muted">Proudly built by Ean Milligan from scratch.  No web designers/builders needed.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+html,body {
+	height: 100%;
+}
+
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	background-color: #f5f5f5;
+	padding-top: 5px;
+}
+
+.col-md-4-5 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	width: 37.5%;
+}
+
+.col-md-3-9 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	margin: 0px 10px;
+	width: 30%;
+}
+
+.col-md-6-c {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	margin: 0px 10px;
+	width: 47%;
+}
+
+#experiences > .row > .col-md-8 > .col-md-6-c:nth-child(2n+1) {
+    clear: both;
+}
+
+.pointer-hand:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.fa-8x {
+	font-size: 8em;
+}
+
+.fa-7x {
+	font-size: 7em;
+}
+
+.fa-stack-cx {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: inherit;
+	font-size: .75em;
+}
