@@ -1,4 +1,36 @@
 <div ng-controller="PongController">
 	<div id="pongLauncher" ng-click="startPong()" ng-hide="playPong"></div>
-	<div id="pongGame" class="pongFont" ng-show="playPong"><center>Play Pong</center></div>
+	<div id="pongWindow" class="pongFont" ng-show="playPong">
+		<div id="pongWrapper" class="invert">
+			<div id="pongContents">
+				<h3 class="text-center">Pong!</h3>
+				<h4 class="text-center">0 - 0</h4>
+				
+				<!--<canvas></canvas>-->
+				
+				<div id="bottomPong">
+					<div id="resetButton" class="revert text-center">
+						<span class="text-v-center">Reset</span>
+					</div>
+					<div id="controlInfo">
+						<div id="leftOfCenter">
+							<span class="text-v-center">
+								<!-- CPU BUTTON -->
+								<span class="control-key">W</span> Up | <span class="control-key">S</span> Down
+							</span>
+						</div>
+						<div id="rightOfCenter" class="text-v-center">
+							<span class="text-v-center">
+								<span class="control-key">&#8593;</span> Up | <span class="control-key">&#8595;</span> Down
+								<!-- CPU BUTTON -->
+							</span>
+						</div>
+					</div>
+					<div id="exitButton" class="revert text-center">
+						<span class="text-v-center">Exit</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

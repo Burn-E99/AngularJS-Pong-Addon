@@ -16,3 +16,117 @@
 .pongFont {
 	font-family: PressStart2P;
 }
+
+#pongWindow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5); 
+	z-index: 1000;
+}
+
+#pongWrapper {
+	position: relative;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 75%;
+	height: 75%;
+	background: rgb(0,0,0);
+	z-index: 1001;
+}
+
+.invert {
+	color: rgb(255, 255, 255);
+}
+
+.revert {
+	color: rgb(0, 0, 0);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-v-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.control-key {
+	border-radius: 3px;
+	border: thin solid white;
+	padding: 2px;
+}
+
+#pongContents {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#bottomPong {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: 0;
+}
+
+#resetButton {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	width: 16.7%;
+	height: 100%;
+	display: table;
+	background-color: white;
+}
+
+#controlInfo {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	width: 66.7%;
+	height: 100%;
+	border-top: medium solid white;
+	border-bottom: medium solid white;
+}
+
+#leftOfCenter {
+	float: left;
+	width: 50%;
+	text-align: right;
+	border-right: thin solid white;
+	padding-right: 15px;
+	height: 100%;
+	display: table;
+}
+
+#rightOfCenter {
+	float: left;
+	width: 50%;
+	text-align: left;
+	border-left: thin solid white;
+	padding-left: 15px;
+	height: 100%;
+	display: table;
+}
+
+#exitButton {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+	width: 16.7%;
+	height: 100%;
+	display: table;
+	background-color: white;
+}

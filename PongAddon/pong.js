@@ -1,5 +1,5 @@
 window.pong.controller('PongController', ['$scope', function($scope) {
-	$scope.playPong = false;
+	$scope.playPong = true;
 	
 	$scope.startPong = function(){
 		$scope.playPong = true;
