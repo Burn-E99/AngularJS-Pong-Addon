@@ -1,5 +1,5 @@
 # AngularJS-Pong-Addon V0.0.1 7/22/15
-This will allow you to add an invisible button to your webpage that you can click and play the classic game Pong.
+This will allow you to add an invisible button to your webpage that you can click and play the classic game Pong.  If you have anything that you want to add to this, or any features, please use the Pull Request feature!
 
 # Requirements: (Not official, and subject to change.)
 - AngularJS v1.2.28 (This is the version I am developing with, later versions should be supported, unless if something drastic changed)
@@ -21,3 +21,6 @@ This will allow you to add an invisible button to your webpage that you can clic
   <div ng-include="'PongAddon/PongBody.html'"></div>
 ```
 6.Play Pong
+
+# Contact
+If you have any comments or questions about this (or anything else I have worked on), please email me (Ean Milligan) at ean.milligan@gmail.com and I will be sure to reply to you!
