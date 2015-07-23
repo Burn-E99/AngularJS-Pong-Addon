@@ -1,6 +1,8 @@
 # AngularJS-Pong-Addon V0.0.1 7/22/15
 This will allow you to add an invisible button to your webpage that you can click and play the classic game Pong.  If you have anything that you want to add to this, or any features, please use the Pull Request feature!
 
+Notice: This game will look best on a screen with a 16:9 screen ratio, but other ratios, like 5:4 also work.
+
 # Requirements: (Not official, and subject to change.)
 - AngularJS v1.2.28 (This is the version I am developing with, later versions should be supported, unless if something drastic changed)
 - ngStorage (For saving local High Scores of you and your friends)
