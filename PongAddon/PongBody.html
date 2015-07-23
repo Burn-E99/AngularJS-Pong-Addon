@@ -6,27 +6,35 @@
 				<h3 class="text-center">Pong!</h3>
 				<h4 class="text-center">0 - 0</h4>
 				
-				<!--<canvas></canvas>-->
+				<div id="centerPong">
+					<canvas id="pongField"></canvas>
+				</div>
 				
 				<div id="bottomPong">
-					<div id="resetButton" class="revert text-center">
-						<span class="text-v-center">Reset</span>
+					<div id="resetButton" class="revert text-center clicker">
+						<span class="text-v-center">Help</span>
 					</div>
 					<div id="controlInfo">
 						<div id="leftOfCenter">
 							<span class="text-v-center">
-								<!-- CPU BUTTON -->
+								<span class="c-text-left cpu-button clicker">
+									<span ng-class="leftCPU ? 'cpu-green' : 'cpu-red'">&#8226;</span>
+									CPU
+								</span>
 								<span class="control-key">W</span> Up | <span class="control-key">S</span> Down
 							</span>
 						</div>
 						<div id="rightOfCenter" class="text-v-center">
 							<span class="text-v-center">
 								<span class="control-key">&#8593;</span> Up | <span class="control-key">&#8595;</span> Down
-								<!-- CPU BUTTON -->
+								<span class="c-text-right cpu-button clicker">
+									CPU
+									<span ng-class="rightCPU ? 'cpu-green' : 'cpu-red'">&#8226;</span>
+								</span>
 							</span>
 						</div>
 					</div>
-					<div id="exitButton" class="revert text-center">
+					<div id="exitButton" class="revert text-center clicker" ng-click="exitPong()">
 						<span class="text-v-center">Exit</span>
 					</div>
 				</div>

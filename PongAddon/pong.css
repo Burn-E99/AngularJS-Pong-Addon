@@ -40,11 +40,11 @@
 }
 
 .invert {
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 .revert {
-	color: rgb(0, 0, 0);
+	color: black;
 }
 
 .text-center {
@@ -62,10 +62,46 @@
 	padding: 2px;
 }
 
+.c-text-left {
+	text-align: left;
+	float: left;
+}
+
+.c-text-right {
+	text-align: right;
+	float: right;
+}
+
+.cpu-button {
+	color: black;
+	border-radius: 3px;
+	border: thin solid white;
+	background: white;
+	padding: 2px;
+}
+
+.cpu-red {
+	color: red;
+}
+
+.cpu-green {
+	color: green;
+}
+
+.clicker {
+	cursor: pointer;
+}
+
 #pongContents {
 	position: absolute;
 	width: 100%;
 	height: 100%;
+}
+
+#centerPong {
+	position: relative;
+	width: 100%;
+	height: 70%;
 }
 
 #bottomPong {
@@ -81,7 +117,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	float: left;
-	width: 16.7%;
+	width: 16.6%;
 	height: 100%;
 	display: table;
 	background-color: white;
@@ -93,7 +129,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	float: left;
-	width: 66.7%;
+	width: 66.8%;
 	height: 100%;
 	border-top: medium solid white;
 	border-bottom: medium solid white;
@@ -125,8 +161,12 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	float: left;
-	width: 16.7%;
+	width: 16.6%;
 	height: 100%;
 	display: table;
 	background-color: white;
+}
+
+#pongField {
+	background: blue;
 }
